@@ -1,6 +1,7 @@
 .body{
     margin: 0px;
     font-family: 'Muli', sans-serif;
+    height: 100%;
 }
 .header{
     width: 100%;
@@ -68,12 +69,10 @@
 }
 
 .principal__container{    
-    background: linear-gradient(#21C08B, #AB88FF);          
-    /* align-items: center;
-    justify-content: center;
-    display: column-flex;
-    flex-direction: column; */
-}
+    background: linear-gradient(#21C08B, #AB88FF);    
+	height: 100%;          
+} 
+
 .searcher h2{
     color: white;
     font-size: 25px;
@@ -306,6 +305,8 @@ footer{
     height: 120px;
     width: 100%;
     background-color: #AB88FF;
+    position:absolute;
+    bottom:0;
 }
 
 footer a {
@@ -320,6 +321,43 @@ footer a:hover {
     text-decoration: underline; 
 }
 
+
+  .text {
+    padding-top: 9%;
+    text-align: center;
+    color: #fff;
+    font-size: 15em;
+    /* font-family: sans-serif; */
+  }
+  .error__container{
+    background: linear-gradient(#21C08B, #AB88FF); 
+    width: 100%;
+    height: 100%;
+  }
+  
+  .animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+  .pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+  }
+  .error__description{
+    color: white;
+    font-size: 35px;
+    width: 100%;
+    margin:0px;
+    padding-bottom: 10.5%;
+  }
+
 @media only screen and (max-width: 600px) {
     .login__container{
         background-color: transparent;
@@ -329,3 +367,4 @@ footer a:hover {
         min-height: 400px;  
     }
 }
+  
