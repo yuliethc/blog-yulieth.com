@@ -95,11 +95,20 @@
 ::placeholder{
     color: white;
 }
+
+.title{
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    padding-left: 90px;
+    width: 100%;
+}
 .carousel{
     width: 100%;
     overflow: scroll;
     padding: 60px;
     position: relative;
+    
 }
 
 .carousel__container{
